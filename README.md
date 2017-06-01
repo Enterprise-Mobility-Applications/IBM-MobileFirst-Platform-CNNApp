@@ -200,6 +200,8 @@ D:\IBM_MF_8_Workspace\cnnMFP\apps\cnnRSSHybrid\android\native>
 
 ===============================================================
 
+INSTALLING AND TESTING YOUR MOBILE App
+=======================================
 Now use Android Studio to generate your APK or use command prompt and pass the following command:
       ant debug
 
@@ -212,4 +214,4 @@ Now use Android Studio to generate your APK or use command prompt and pass the f
     		Launch one of them:		emulator -avd Nexus5XAPI25
 
 Now Install the APK on Emulator or Physical Device by using the following command:
-    ADB Install <APK FILE with absolute path>
+    ADB Install <b>APK FILE with absolute path</b>
