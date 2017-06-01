@@ -1,0 +1,16 @@
+base.ipad=3920830985
+base.iphone=3920830985
+base.android=773361075
+base.windowsphone8=2255506155
+analytics.iphone=2554529831
+analytics.ipad=2554529831
+analytics.android=963009885
+fipshttp.iphone=1810222242
+fipshttp.ipad=1810222242
+fipshttp.android=4108093608
+jsonstore.android=1318792589
+jsonstore.windowsphone8=919996337
+common.android=4170331147
+eclipse.preferences.version=1
+wl_compatible_version=
+wl_version=7.1.0.00.20170330-0917
