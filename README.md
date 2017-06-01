@@ -1,9 +1,9 @@
 "# IBM-MobileFirst-Platform-CNNApp"
 
-Since do not have a lot of time to supply detailed info, hence supplying here what I did on my CMD prompt. Hope this helps you in setting up your first Ionic IBM MobileFirst Project.
+<B>Since do not have a lot of time to supply detailed info, hence supplying here what I did on my CMD prompt. Hope this helps you in setting up your first Ionic IBM MobileFirst Project.
+</B>
 
-
-
+===================================================================================
 D:\IBM_MF_8_Workspace>mfp create cnnMFP
 
 A MobileFirst Project was successfully created at D:\IBM_MF_8_Workspace\cnnMFP
@@ -155,19 +155,19 @@ and tools\bin\avdmanager.bat
 Invoking "C:\Users\nirreddy\AppData\Local\Android\sdk\tools\bin\avdmanager" list target
 
 Available Android targets:
-----------
+
 id: 1 or "android-16"
      Name: Android API 16
      Type: Platform
      API level: 16
      Revision: 5
-----------
+
 id: 2 or "android-23"
      Name: Android API 23
      Type: Platform
      API level: 23
      Revision: 3
-----------
+
 id: 3 or "android-25"
      Name: Android API 25
      Type: Platform
@@ -203,6 +203,7 @@ D:\IBM_MF_8_Workspace\cnnMFP\apps\cnnRSSHybrid\android\native>
 INSTALLING AND TESTING YOUR MOBILE App
 =======================================
 Now use Android Studio to generate your APK or use command prompt and pass the following command:
+
       ant debug
 
           This should generate a debug APK.
@@ -214,4 +215,5 @@ Now use Android Studio to generate your APK or use command prompt and pass the f
     		Launch one of them:		emulator -avd Nexus5XAPI25
 
 Now Install the APK on Emulator or Physical Device by using the following command:
+
     ADB Install <b>APK FILE with absolute path</b>
