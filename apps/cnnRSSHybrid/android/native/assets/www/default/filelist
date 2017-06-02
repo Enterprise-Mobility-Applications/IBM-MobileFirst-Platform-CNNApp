@@ -24,12 +24,6 @@
 /assets/fonts/roboto-regular.woff2
 /assets/fonts/roboto.scss
 /assets/icon/favicon.ico
-/build/main.css
-/build/main.css.map
-/build/main.js
-/build/main.js.map
-/build/polyfills.js
-/build/sw-toolbox.js
 /css/application.css
 /css/main.css
 /css/style.css
