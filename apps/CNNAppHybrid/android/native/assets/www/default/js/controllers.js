@@ -26,12 +26,14 @@ angular.module('starter.controllers', [])
           $scope.items = response.invocationResult.Items;
           $scope.$apply();
           //refresher.complete();
+          $scope.$broadcast('scroll.refreshComplete');
         }
       },
       {
         onFailure: function(response) {
           console.log('Failed to call Adapter: ', response);
           //refresher.complete();
+          $scope.$broadcast('scroll.refreshComplete');
         }
       }
     )
@@ -39,7 +41,7 @@ angular.module('starter.controllers', [])
 
   $scope.doRefresh = function() {
     $scope.getData($scope.tag);
-    refresher.complete();
+    //refresher.complete();
 
       //console.log('Begin async operation', refresher);
 
