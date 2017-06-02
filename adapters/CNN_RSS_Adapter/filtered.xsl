@@ -1,6 +1,7 @@
 <xsl:stylesheet version="1.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:h="http://www.w3.org/1999/xhtml">
+                xmlns:h="http://www.w3.org/1999/xhtml"
+                xmlns:yah="http://search.yahoo.com/mrss/">
     <xsl:output method="text"/>
 
     <xsl:template match="/">
@@ -12,7 +13,9 @@
 		                'guid': '<xsl:value-of select="guid"/>',
 		                'link': '<xsl:value-of select="link"/>',
 		                'description': '<xsl:value-of select="description"/>',
-		                'pubDate': '<xsl:value-of select="pubDate"/>'
+		                'pubDate': '<xsl:value-of select="pubDate"/>',
+                    'thumbnail': '<xsl:value-of select="image/url"/>',
+                    'img': '<xsl:value-of select="media:content/@url"/>'
 	                },
 		        </xsl:for-each>
 	        ]

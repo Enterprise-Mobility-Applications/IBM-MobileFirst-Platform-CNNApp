@@ -16,7 +16,7 @@
     <ion-list ng-click="goTo(item)" collection-repeat="item in items | filter:searchFilter">
       <ion-item>
         <ion-thumbnail item-left>
-          <img src="cover.jpg">
+          <img src="{{item.thumbnail}}">
         </ion-thumbnail>
         <h2>{{item.title}}</h2>
         <p>{{item.description}}</p>
