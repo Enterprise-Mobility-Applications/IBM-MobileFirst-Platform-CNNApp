@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Licensed Materials - Property of IBM			 5725-I43 (C) Copyright IBM Corp. 2006, 2013, 2015. All Rights Reserved.			 US Government Users Restricted Rights - Use, duplication or             disclosure restricted by GSA ADP Schedule Contract with IBM Corp. -->
 <!-- Attribute "id" must be identical to application folder name -->
-<application id="CNNAppHybrid" platformVersion="7.1.0.00.20170330-0917"	
-  xmlns="http://www.worklight.com/application-descriptor" 	
+<application id="CNNAppHybrid" platformVersion="7.1.0.00.20170330-0917"  
+  xmlns="http://www.worklight.com/application-descriptor"   
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <displayName>CNNAppHybrid</displayName>
   <description>CNNAppHybrid</description>
@@ -29,4 +29,5 @@
       <publicSigningKey/>
     </security>
   </android>
+  <desktopBrowser cacheManifest="no-use"/>
 </application>

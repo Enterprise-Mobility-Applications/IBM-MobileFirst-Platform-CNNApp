@@ -229,3 +229,45 @@ Now use Android Studio to generate your APK or use command prompt and pass the f
 Now Install the APK on Emulator or Physical Device by using the following command:
 
     ADB Install <b>APK FILE with absolute path</b>
+
+
+
+
+
+
+LAB 05 : ADDING ADAPTERS AND CONFIGURING THEM (& THEN USE THEM, OF COURSE)
+===============================================================================
+
+Enter the following command:
+
+  -   mfp add adapter
+  It will ask for several options. Supply adequate info. I chose HTTP Adapter.
+
+  Now Build your project......
+
+  -   mfp bd    // Build and Deploy.
+
+  Since the above command is deprecated in MFP version 8.0, use the following going forward. Mind that this command will take more time compared to the above.
+
+  -   mfp push
+
+  Now you can view the adapter(s) on MFP Web Console. To launch the Web Console simply pass the following command.....
+
+  -   mfp console
+
+
+Now You would like to test your Adapter. Right?
+
+  Use the following command.....
+
+  -   mfp invoke
+
+        This will list all available adapters and you need to choose which one you want to execute.
+
+
+
+Now Navigate to ./apps/<YOUR APP> and add a new environment by passing the following command.
+
+  -   mfp add environment
+
+  It will ask you to select the environment. Select "Desktop Browser web page". This will help develop/test your mobile application much faster.

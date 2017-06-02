@@ -1,13 +1,13 @@
 <ion-view view-title="News">
   <ion-content>
-    <ion-list ng-click="goTo()">
+    <ion-list ng-click="goTo(item)" collection-repeat="item in items">
       <ion-item>
         <ion-thumbnail item-left>
           <img src="cover.jpg">
         </ion-thumbnail>
-        <h2>title</h2>
-        <p>description</p>
-        <p>pub date</p>
+        <h2>{{item.title}}</h2>
+        <p>{{item.description}}</p>
+        <p>{{item.pubDate}}</p>
         <!-- <button ion-button clear item-right>View</button> -->
       </ion-item>
     </ion-list>
