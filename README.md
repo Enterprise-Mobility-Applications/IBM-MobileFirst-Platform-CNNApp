@@ -4,6 +4,18 @@
 </B>
 
 ===================================================================================
+Note that I have Ionic CLI V3 installed on my machine...
+
+
+CREATE IONIC Project
+===========================
+Use the following command:
+
+ionic start cnnIO1 sidemenu --type=ionic1
+
+It will create an Ionic V1 project with SIDEMENU template.
+
+
 D:\IBM_MF_8_Workspace>mfp create cnnMFP
 
 A MobileFirst Project was successfully created at D:\IBM_MF_8_Workspace\cnnMFP
