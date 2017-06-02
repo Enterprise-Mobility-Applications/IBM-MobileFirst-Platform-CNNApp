@@ -76,12 +76,9 @@
 /manifest.json
 /README.md
 /service-worker.js
-/templates/browse.html
-/templates/login.html
+/templates/details.html
+/templates/main.html
 /templates/menu.html
-/templates/playlist.html
-/templates/playlists.html
-/templates/search.html
 /worklight/cordova.js
 /worklight/cordova_plugins.js
 /worklight/messages/de/messages.json
