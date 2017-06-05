@@ -232,14 +232,6 @@ Now Install the APK on Emulator or Physical Device by using the following comman
 
 
 
-
-
-<<<<<<< HEAD
-Here is the link where you can watch videos and build more sophisticated apps .
-
-https://www.youtube.com/channel/UCh87bBs4spErQbW0OnzXUwg/playlists?&feature=youtu.be
-=======
-
 LAB 05 : ADDING ADAPTERS AND CONFIGURING THEM (& THEN USE THEM, OF COURSE)
 ===============================================================================
 
@@ -310,4 +302,12 @@ When you use the "git branch -m (move)", git is also updating your tracking bran
 git remote rename is trying to update your remote section in your config file. It will rename the remote with the given name to the new name, but in your case it did not find any, so the renaming failed.
 
 But it will not do what you think, it will rename your local config remote name and not the remote branch.
->>>>>>> 874179451dc578b270f0965fe5a18fff774d31da
+
+
+
+
+
+
+Here is the link where you can watch videos and build more sophisticated apps .
+
+https://www.youtube.com/channel/UCh87bBs4spErQbW0OnzXUwg/playlists?&feature=youtu.be
