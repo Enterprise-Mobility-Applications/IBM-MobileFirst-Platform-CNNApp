@@ -5,6 +5,17 @@ angular.module('starter.controllers', [])
   $scope.currentItem = [];
   $scope.tag = '';
 
+  wlInitOptions.onSuccess = function() {
+    WL.Client.connect({
+  		onSuccess: function() {
+  			console.log('Connected to MFP Server');
+        $scope.getData();
+  		},
+  		onFailure: function() {
+  			console.log('Failed to connect to MFP Server');
+  		}
+  	});
+  }
   $scope.goTo = function(item) {
     $state.go('app.details');
     $scope.currentItem = item;
@@ -49,5 +60,5 @@ angular.module('starter.controllers', [])
       //}, 2000);
   }
 
-  $scope.getData();
+  WL.Client.init(wlInitOptions);
 });
