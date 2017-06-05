@@ -1,0 +1,28 @@
+<ion-view view-title="News">
+  <div class="bar bar-subheader bar-assertive item-input-inset">
+    <label class="item-input-wrapper">
+      <i class="icon ion-ios7-search placeholder-icon"></i>
+      <input type="search" placeholder="Search" ng-model="searchFilter">
+    </label>
+    <button class="button button-clear" ng-click="searchFilter = null">
+      Clear
+    </button>
+  </div>
+  <ion-content class="has-subheader">
+    <ion-refresher
+        (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+    <ion-list ng-click="goTo(item)" collection-repeat="item in items | filter:searchFilter">
+      <ion-item>
+        <ion-thumbnail item-left class="item item-thumbnail-left listStyling">
+          <img class="thumb" src="{{item.thumbnail}}">
+        </ion-thumbnail>
+        <h2>{{item.title}}</h2>
+        <p>{{item.description}}</p>
+        <p>{{item.pubDate}}</p>
+        <!-- <button ion-button clear item-right>View</button> -->
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

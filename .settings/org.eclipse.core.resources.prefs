@@ -17,3 +17,6 @@ wl_version=7.1.0.00.20170330-0917
 
 encoding//apps/cnnRSSHybrid/common/index.html=ISO-8859-1
 encoding//apps/cnnRSSHybrid/android/css/main.css=UTF-8
+encoding//apps/CNNAppHybrid/common/index.html=ISO-8859-1
+encoding//apps/CNNAppHybrid/android/css/main.css=UTF-8
+encoding//apps/CNNAppHybrid/desktopbrowser/css/main.css=UTF-8
