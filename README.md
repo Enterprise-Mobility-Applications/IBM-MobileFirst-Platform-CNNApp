@@ -217,3 +217,11 @@ Now use Android Studio to generate your APK or use command prompt and pass the f
 Now Install the APK on Emulator or Physical Device by using the following command:
 
     ADB Install <b>APK FILE with absolute path</b>
+
+
+
+
+
+Here is the link where you can watch videos and build more sophisticated apps .
+
+https://www.youtube.com/channel/UCh87bBs4spErQbW0OnzXUwg/playlists?&feature=youtu.be
