@@ -4,6 +4,18 @@
 </B>
 
 ===================================================================================
+Note that I have Ionic CLI V3 installed on my machine...
+
+
+CREATE IONIC Project
+===========================
+Use the following command:
+
+ionic start cnnIO1 sidemenu --type=ionic1
+
+It will create an Ionic V1 project with SIDEMENU template.
+
+
 D:\IBM_MF_8_Workspace>mfp create cnnMFP
 
 A MobileFirst Project was successfully created at D:\IBM_MF_8_Workspace\cnnMFP
@@ -217,3 +229,79 @@ Now use Android Studio to generate your APK or use command prompt and pass the f
 Now Install the APK on Emulator or Physical Device by using the following command:
 
     ADB Install <b>APK FILE with absolute path</b>
+
+
+
+
+
+
+LAB 05 : ADDING ADAPTERS AND CONFIGURING THEM (& THEN USE THEM, OF COURSE)
+===============================================================================
+
+Enter the following command:
+
+  -   mfp add adapter
+  It will ask for several options. Supply adequate info. I chose HTTP Adapter.
+
+  Now Build your project......
+
+  -   mfp bd    // Build and Deploy.
+
+  Since the above command is deprecated in MFP version 8.0, use the following going forward. Mind that this command will take more time compared to the above.
+
+  -   mfp push
+
+  Now you can view the adapter(s) on MFP Web Console. To launch the Web Console simply pass the following command.....
+
+  -   mfp console
+
+
+Now You would like to test your Adapter. Right?
+
+  Use the following command.....
+
+  -   mfp invoke
+
+        This will list all available adapters and you need to choose which one you want to execute.
+
+
+
+Now Navigate to ./apps/<YOUR APP> and add a new environment by passing the following command.
+
+  -   mfp add environment
+
+  It will ask you to select the environment. Select "Desktop Browser web page". This will help develop/test your mobile application much faster.
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+<h1>REFACTOR: Renamed Remote GITHUB Branches to suit future LAB COMMITS in better and systematic manner.</h1>
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+You can't directly rename a remote branch. You have to delete it and then re-push it.
+
+Something like :
+
+  #rename the local branch to the new name
+
+          git branch -m old_name new_name
+
+  #delete the old branch on remote - where <remote> is eg. origin
+
+          git push <remote> --delete old_name
+
+  #push the new branch to remote
+
+          git push <remote> new_name
+
+
+
+Important note :
+
+When you use the "git branch -m (move)", git is also updating your tracking branch with the new name.
+
+        git remote rename regacy legacy
+
+git remote rename is trying to update your remote section in your config file. It will rename the remote with the given name to the new name, but in your case it did not find any, so the renaming failed.
+
+But it will not do what you think, it will rename your local config remote name and not the remote branch.
