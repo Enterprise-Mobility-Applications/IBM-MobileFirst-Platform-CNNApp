@@ -271,3 +271,30 @@ Now Navigate to ./apps/<YOUR APP> and add a new environment by passing the follo
   -   mfp add environment
 
   It will ask you to select the environment. Select "Desktop Browser web page". This will help develop/test your mobile application much faster.
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+REFACTOR: Renamed Remote GITHUB Branches to suit future LAB COMMITS in better and systematic manner.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+You can't directly rename a remote branch. You have to delete it and then re-push it.
+
+Something like :
+
+#rename the local branch to the new name
+git branch -m old_name new_name
+
+#delete the old branch on remote - where <remote> is eg. origin
+git push <remote> --delete old_name
+
+#push the new branch to remote         
+git push <remote> new_name
+Important note :
+
+When you use the git branch -m (move), git is also updating your tracking branch with the new name.
+
+git remote rename regacy legacy
+git remote rename is trying to update your remote section in your config file. It will rename the remote with the given name to the new name, but in your case it did not find any, so the renaming failed.
+
+But it will not do what you think, it will rename your local config remote name and not the remote branch. 

@@ -2,3 +2,8 @@
 body {
   position: absolute;
 }
+
+.thumb {
+  height: 51px;
+  width: 96px;
+}
