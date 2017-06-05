@@ -15,7 +15,7 @@
     </ion-refresher>
     <ion-list ng-click="goTo(item)" collection-repeat="item in items | filter:searchFilter">
       <ion-item>
-        <ion-thumbnail item-left>
+        <ion-thumbnail item-left class="item item-thumbnail-left listStyling">
           <img class="thumb" src="{{item.thumbnail}}">
         </ion-thumbnail>
         <h2>{{item.title}}</h2>

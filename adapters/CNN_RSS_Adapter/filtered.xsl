@@ -14,8 +14,8 @@
 		                'link': '<xsl:value-of select="link"/>',
 		                'description': '<xsl:value-of select="description"/>',
 		                'pubDate': '<xsl:value-of select="pubDate"/>',
-                    'thumbnail': '<xsl:value-of select="image/url"/>',
-                    'img': '<xsl:value-of select="media:content/@url"/>'
+                    'thumbnail': '<xsl:value-of select="yah:image/@url"/>',
+                    'img': '<xsl:value-of select="yah:content/@url"/>'
 	                },
 		        </xsl:for-each>
 	        ]

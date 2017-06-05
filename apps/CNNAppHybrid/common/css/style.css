@@ -4,6 +4,22 @@ body {
 }
 
 .thumb {
-  height: 51px;
-  width: 96px;
+  height: 51px!important;
+  width: 96px!important;
+  max-width: 90!important;
+  margin-top: 4px;
+}
+
+.listStyling {
+  height: 80px!important;
+  min-height: 0px!important;
+}
+
+.generalPadding {
+  padding: 10px;
+}
+
+.detailedIMG {
+  width: 100%;
+  padding-bottom: 10px;
 }
